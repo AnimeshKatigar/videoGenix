@@ -1,0 +1,50 @@
+.highlightText {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #9a50f0;
+}
+.mainHeader {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+
+  color: #1f1031;
+}
+.secondaryTitle {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.startTitle {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #9a50f0;
+  text-shadow: 5px 5px 10px rgba(170, 170, 204, 0.5), -5px -5px 10px #ffffff;
+}
+
+.inputLabel {
+  font-size: 30px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.proceedBtn {
+  /* height: 40px; */
+  margin-top: 30px;
+  background: linear-gradient(87.86deg, #ec74e7 -45.12%, #8468f5 74.37%);
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  width: 100px;
+  padding: 10px 20px;
+  filter: drop-shadow(5px 5px 10px rgba(170, 170, 204, 0.5))
+    drop-shadow(-5px -5px 10px #ffffff);
+}
