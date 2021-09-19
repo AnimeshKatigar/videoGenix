@@ -10,7 +10,7 @@ const Landing = () => {
     state: { Name: name },
   };
   let history = useHistory();
-  const handleClick = () => history.push(location);
+  const handleClick = () => {name.length!==0 && history.push(location)};
   return (
     <div style={{ display: "flex" }}>
       <div className="landingLeft">
@@ -23,7 +23,7 @@ const Landing = () => {
           for everyone
         </h3>
         <h3 className="startTitle">START YOUR CALL</h3>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex",marginTop: "15px"}}>
           <div className="inputLabel">Name</div>
           <div>
             <input
@@ -34,7 +34,7 @@ const Landing = () => {
             />
           </div>
         </div>
-        <div className="proceedBtn" onClick={handleClick}>
+        <div className={name.length!==0 ? "proceedBtn" : "proceedDisabled"} onClick={handleClick} style={name.length!==0 ? {cursor:'pointer'} : {cursor:"not-allowed"}}>
           Proceed
         </div>
       </div>

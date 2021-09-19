@@ -13,12 +13,12 @@ const Main = () => {
             Hey <span className="highlightText" style={{textTransform:"none"}}>{clientName}</span>
           </h2>
           <h3 className="secondaryTitle">
-            We have generated an unique ID for you. Copy and share it
+            We have generated an unique ID for you.<br/> Copy and share it
           </h3>
         </div>
         <div className="landingRight">
           <h3 className="callTitle">Make a Call</h3>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex",marginTop:"10px" }}>
             <div className="inputLabel">ID to call</div>
             <div>
               <input type="text" placeholder="Enter the ID..." />

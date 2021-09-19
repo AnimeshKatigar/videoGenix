@@ -1,51 +1,52 @@
 .landingLeft {
+  margin-top:30px;
   width: 48%;
 }
 
 .landingRight {
+  margin-top:30px;
   width: 48%;
 }
 
 .highlightText {
   font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 36px;
+  /* line-height: 40px; */
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #9a50f0;
 }
 .mainHeader {
   font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
-
+  font-size: 36px;
+  line-height: 40px;
   color: #1f1031;
 }
 .secondaryTitle {
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  margin:15px 0px;
+  /* line-height: 20px; */
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .startTitle {
   font-weight: bold;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 24px;
+  /* line-height: 39px; */
   color: #9a50f0;
   text-shadow: 5px 5px 10px rgba(170, 170, 204, 0.5), -5px -5px 10px #ffffff;
 }
 
 .inputLabel {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 40px;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .proceedBtn {
   /* height: 40px; */
-  cursor: pointer;
-  margin-top: 30px;
+  margin-top: 15px;
   background: linear-gradient(87.86deg, #ec74e7 -45.12%, #8468f5 74.37%);
   border-radius: 30px;
   font-size: 20px;
@@ -63,6 +64,20 @@
     drop-shadow(5px 5px 10px rgba(170, 170, 204, 0.25))
     drop-shadow(10px 10px 20px rgba(170, 170, 204, 0.5))
     drop-shadow(-10px -10px 20px #ffffff);
+}
+
+.proceedDisabled{
+  margin-top: 15px;
+  font-weight: 600;
+  /* background: linear-gradient(87.86deg, #ec74e7 -45.12%, #8468f5 74.37%); */
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  /* letter-spacing: 1.5px; */
+  color: rgba(120, 120, 171, 1);
+  width: 150px;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 2px rgba(170, 170, 204, 0.5), -1px -1px 2px #FFFFFF;
 }
 
 .callTitle {
