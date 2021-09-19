@@ -1,3 +1,11 @@
+.landingLeft {
+  width: 48%;
+}
+
+.landingRight {
+  width: 48%;
+}
+
 .highlightText {
   font-weight: bold;
   font-size: 50px;
@@ -36,6 +44,7 @@
 
 .proceedBtn {
   /* height: 40px; */
+  cursor: pointer;
   margin-top: 30px;
   background: linear-gradient(87.86deg, #ec74e7 -45.12%, #8468f5 74.37%);
   border-radius: 30px;
@@ -43,8 +52,24 @@
   text-align: center;
   letter-spacing: 1.5px;
   color: #ffffff;
-  width: 100px;
+  width: 150px;
   padding: 10px 20px;
   filter: drop-shadow(5px 5px 10px rgba(170, 170, 204, 0.5))
     drop-shadow(-5px -5px 10px #ffffff);
+}
+
+.proceedBtn:hover {
+  filter: drop-shadow(-5px -5px 10px rgba(255, 255, 255, 0.5))
+    drop-shadow(5px 5px 10px rgba(170, 170, 204, 0.25))
+    drop-shadow(10px 10px 20px rgba(170, 170, 204, 0.5))
+    drop-shadow(-10px -10px 20px #ffffff);
+}
+
+.callTitle {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  /* display: flex;
+  align-items: center; */
+  color: #9a50f0;
 }
