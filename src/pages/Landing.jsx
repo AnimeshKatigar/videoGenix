@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import imga from "../assets/image.svg";
 import "../styles.css";
+import { SocketContext } from "../Socket";
 
 const Landing = () => {
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
   const location = {
     pathname: "/call",
-    state: { Name: name },
+    // state: { Name: name },
   };
   let history = useHistory();
-  const handleClick = () => {name.length!==0 && history.push(location)};
+  const handleClick = () => {
+    if (name.length !== 0) {
+      history.push(location);
+      setPath(true);
+    }
+  };
+  const { name, setName, setPath } = useContext(SocketContext);
+
   return (
     <div style={{ display: "flex" }}>
       <div className="landingLeft">
@@ -23,7 +31,7 @@ const Landing = () => {
           for everyone
         </h3>
         <h3 className="startTitle">START YOUR CALL</h3>
-        <div style={{ display: "flex",marginTop: "15px"}}>
+        <div style={{ display: "flex", marginTop: "15px" }}>
           <div className="inputLabel">Name</div>
           <div>
             <input
@@ -34,7 +42,15 @@ const Landing = () => {
             />
           </div>
         </div>
-        <div className={name.length!==0 ? "proceedBtn" : "proceedDisabled"} onClick={handleClick} style={name.length!==0 ? {cursor:'pointer'} : {cursor:"not-allowed"}}>
+        <div
+          className={name.length !== 0 ? "proceedBtn" : "proceedDisabled"}
+          onClick={handleClick}
+          style={
+            name.length !== 0
+              ? { cursor: "pointer" }
+              : { cursor: "not-allowed" }
+          }
+        >
           Proceed
         </div>
       </div>

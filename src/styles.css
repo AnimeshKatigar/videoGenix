@@ -1,10 +1,10 @@
 .landingLeft {
-  margin-top:30px;
+  margin-top: 30px;
   width: 48%;
 }
 
 .landingRight {
-  margin-top:30px;
+  margin-top: 30px;
   width: 48%;
 }
 
@@ -24,7 +24,7 @@
 }
 .secondaryTitle {
   font-size: 18px;
-  margin:15px 0px;
+  margin: 15px 0px;
   /* line-height: 20px; */
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
@@ -51,7 +51,7 @@
   border-radius: 30px;
   font-size: 20px;
   text-align: center;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
   color: #ffffff;
   width: 150px;
   padding: 10px 20px;
@@ -66,7 +66,7 @@
     drop-shadow(-10px -10px 20px #ffffff);
 }
 
-.proceedDisabled{
+.proceedDisabled {
   margin-top: 15px;
   font-weight: 600;
   /* background: linear-gradient(87.86deg, #ec74e7 -45.12%, #8468f5 74.37%); */
@@ -74,10 +74,11 @@
   font-size: 20px;
   text-align: center;
   /* letter-spacing: 1.5px; */
-  color: rgba(120, 120, 171, 1);
+  color: rgb(127, 127, 156);
+  /* color: rgba(120, 120, 171, 1); */
   width: 150px;
   padding: 10px 20px;
-  box-shadow: 1px 1px 2px rgba(170, 170, 204, 0.5), -1px -1px 2px #FFFFFF;
+  box-shadow: 1px 1px 2px rgba(170, 170, 204, 0.5), -1px -1px 2px #ffffff;
 }
 
 .callTitle {
@@ -87,4 +88,14 @@
   /* display: flex;
   align-items: center; */
   color: #9a50f0;
+}
+
+.videoName {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  color: #9a50f0;
+  margin-bottom:5px
 }
