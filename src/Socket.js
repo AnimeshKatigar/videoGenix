@@ -20,12 +20,6 @@ const ContextProvider = ({ children }) => {
   const userVideo = useRef();
   const connectionRef = useRef();
 
-//   useEffect(() => {
-//     if (window.location.pathname === "/call") {
-//       setPath(window.location.pathname);
-//     }
-//   });
-
   useEffect(() => {
     if (window.location.pathname === "/call") {
       navigator.mediaDevices
